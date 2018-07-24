@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<div class="page-header" align="center">
+<img src="http://i67.tinypic.com/2wfs7j5.png" align="center">
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px -80px;
+    height: 550%;
+}
+
+#Recovery {background-color: #E6E6FA;}
+#Home {background-color: #BBFF99;}
+#Hotlines {background-color: #BBFF99;}
+#About {background-color: #E6E6FA;}
+</style>
+
+<title>H.U.G.S.</title>
+<style type="text/css">
+
+A:link {text-decoration: none}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline}
+
+</style>
+
+</head>
+<body>
+<button class="tablink" onclick="openPage('Recovery', this, '#E6E6FA')">Recovery</button>
+<button class="tablink" onclick="openPage('Home', this, '#BBFF99')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Hotlines', this, '#BBFF99')">Hotlines</button>
+<button class="tablink" onclick="openPage('About', this, '#E6E6FA')">About</button>
+
+<div id="Recovery" class="tabcontent">
+<p ALIGN=center> <font size="+2", color="black">
+  <b>800,000 is the estimated number of people globally die by commiting suicide each year.<b> <br> So in order to help lower that percentage, here is a map with the nearest therapists or counselors around you.</font>
+ <p ALIGN=center> <iframe src="https://www.google.com/maps/d/embed?mid=1sk8-KtT7NQdBTJnOMYROWV27bS3TjtZM" width="900" height="700" align="center"></iframe>
+
+    <p ALIGN=center> <font size="+2", color="black"> A Few Facts</font>
+
+   <ul><font size= "+1", color="black">
+
+  <li> 61,500,000 americans suffer from a mental health disorder every years. That's one in four adults
+  <li>70-90% of people with metnal illness saw improvement in their quality of life after having some sort of treatment
+  <li>16 out of 100,000 people commit suicide or one death every 40 seconds
+  <li>By 2020 the death rate will increase to one every 20 seconds
+  <li>Mental health disorders are usually associated with more than 90% of all suicide cases
+  <li>Leading cause of death in the USA
+  <li>Suicide is the 2nd cause of death for individuals among 10 and 34 years old
+  <li>Suicide rates have increased 28% since 1999 to 2016 and is still rising
+  <li>Statistically more men than women commit suicide in the USA(its about 4 times more than women)
+  <li>Only half of all Americans experiencing an episode of major depression receive treatment
+  <li>80%-90% of people that seek treatment for depression are treated successfully using therapy and/or medication
+    </ul>
+     </font>
+    </div>
+
+
+<div id="Home" class="tabcontent" style="font-family:sans-serif">
+<font color="black">
+   <font size="5"> </font>
+  <font size="3">
+    <font size="5"></font>
+   <font size="3">
+ <div align="center">
+ <br><br>
+   <font size="+5">Home</font>
+ <p><h3>Life can be depressing sometimes; as founders, we understand that. In many circumstances, people just want the ability to rant about what troubles them. We have grown up in a generation that fully depends on technology; therefore, dealing with emotions is something new and intimidating.
+   When not interpreted properly, these emotions become dangerous and overpowering. This can be an even bigger problem when the danger is brought upon you by a loved one; a bully; a stranger. As people, we have to keep in mind that words do hurt.
+   They have the power to burrow into one's skin and accumulate into tumors; a cancer that feeds off depression. Instead of acting on instinct, we should gather for the greater good and spread the word of happiness. Whether it's listening to a friend, writing your thoughts, or thinking before speaking, we can all help stop abusive scenarios.
+   For ourselves and others around us.</h3></div>
+
+<!-- Comments Section: Literally took 4 days to complete -->
+ <div id="respond" align="center">
+   <h4>Is there something that you'd like to discuss? Share your story.</h4>
+   <div>
+     <h3><label>Your Story:</label>
+     <select class="w3-select" name="option" type="select" id="topic">
+       <option value="" disabled selected>Choose your topic...</option>
+       <option value="Abuse">Abuse</option>
+       <option value="LGBTQ+">LGBTQ+</option>
+       <option value="Runaways">Runaways</option>
+       <option value="Self-Injury">Self-Injury</option>
+       <option value="Family Violence">Family Violence</option>
+       <option value="Addiction">Addiction</option>
+       <option value="Suicide">Suicide</option>
+       <option value="Domestic Violence">Domestic Violence</option>
+       <option value="Positive Reinforcement">Positive Reinforcement</option>
+     </select></h3>
+
+     <input class="w3-input" type="text" id="story" placeholder="Type here!">
+     <button type="button" onclick="myFunction()" class="w3-btn">Post</button>
+     <p id="demo"></p>
+   </div>
+
+   <script>
+   var comment = "";
+   function myFunction() {
+    var topic = document.getElementById("topic").value;
+    var story = document.getElementById("story").value;
+    comment = comment +" "+ topic + ": " + story + "<p>" ;
+    document.getElementById("demo").innerHTML = comment;
+  }
+   </script>
+     <style>
+     #respond {
+       margin-top: 40px;
+     }
+
+     #respond input[type='select'],
+     #respond input[type='text'],
+     #respond textarea {
+       margin-bottom: 10px;
+       display: block;
+       width: 50%;
+       length: 1%;
+
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       -o-border-radius: 5px;
+       -ms-border-radius: 5px;
+       -khtml-border-radius: 5px;
+       border-radius: 5px;
+
+       line-height: 1.4em;
+     }
+   </style>
+
+   Addiction: I know it doesn't seem that serious but I have a really big addiction to M&M's and I know if I keep eating them I could get sick. But YOLO, right...right?
+ <br><br>
+   Positive Reinforcement: Although all these posts are annonymous I can relate to all of them at some level. I choose to survive because I want to achieve my dreams and everyone should too. You are a gift.
+ <br><br>
+   Positive Reinforcement: Never give up on your dreams and listen to your heart. Don't let anyone tell you what you can or cannot do; they only limit you because you are awesome!
+ <br><br>
+   Addiction: I have an addiction to starbucks... it's really hurting my wallet. Helppppp
+ </div>
+</font>
+  <style>
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column1 {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width:100%;
+    background-color: #daffb3;
+  }
+
+  .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  </style>
+  </head>
+  <body>
+<h2 align="center">Positive Quotes</h2>
+
+<div>
+  <div class="row">
+      <div class="column1">
+        <div class="card">
+        <img src="http://i63.tinypic.com/vobinc.jpg" alt="Fyodor Dostoevsky" style="width:100%">
+        <div class="container">
+          <h4><b>Fyodor Dostoevsky</b></h4>
+          <p> “Man is fond of counting his troubles, but he does not count his joys. If he counted them up as he ought to, he would see that every lot has enough happiness provided for it.”</p>
+        </div>
+      </div>
+    </div>
+      <div class="column1">
+        <div class="card">
+          <img src="http://i63.tinypic.com/28he6g6.jpg" alt="Joyce Meyer" style="width:100%">
+          <div class="container">
+            <h4><b>Joyce Meyer</b></h4>
+            <p> “A positive attitude gives you power over your circumstances instead of your circumstances having power over you.”</p>
+          </div>
+        </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+      <img src="http://i68.tinypic.com/f3ddon.jpg" alt="Helen Keller" style="width:100%">
+      <div class="container">
+        <h4><b>Helen Keller</b></h4>
+        <p> “Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened, ambition inspired, and success achieved.”</p>
+        <p> “Although the world is full of suffering, it is also full of the overcoming of it.”</p>
+      </div>
+    </div>
+  </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i66.tinypic.com/w0oll1.jpg" alt="Unknown" style="width:100%">
+        <div class="container">
+          <h4><b>Unknown</b></h4>
+          <p> “Life isn’t about waiting for the storm to pass, it’s about learning how to dance in the rain.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i67.tinypic.com/2nkl9fs.jpg" alt="Rainer Maria Rilke" style="width:100%">
+        <div class="container">
+          <h4><b>Rainer Maria Rilke</b></h4>
+          <p> “Have patience with everything unresolved in your heart and to try to love the questions themselves. Don’t search for the answers, which could not be given to you now, because you would not be able to live them. And the point is to live everything. Live the questions now. Perhaps then, someday far in the future, you will gradually, without even noticing it, live your way into the answer.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="row">
+    <div class="column1">
+      <div class="card">
+        <img src="http://i66.tinypic.com/minup1.jpg" alt="Meister Eckhart" style="width:100%">
+        <div class="container">
+          <h4><b>Meister Eckhart</b></h4>
+          <p> “Truly, it is in the darkness that one finds the light, so when we are in sorrow, then this light is nearest of all to us.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i68.tinypic.com/2ilihr5.jpg" alt="Albert Camus" style="width:100%">
+        <div class="container">
+          <h4><b>Albert Camus</b></h4>
+          <p> “In the midst of winter, I finally learned that there was in me an invincible summer.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i66.tinypic.com/5ppedw.jpg" alt="John Wooden" style="width:100%">
+        <div class="container">
+          <h4><b>John Wooden</b></h4>
+          <p> “Do not let what you cannot do interfere with what you can do.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i68.tinypic.com/2epn4ea.jpg" alt="Winston Churchill" style="width:100%">
+        <div class="container">
+          <h4><b>Winston Churchill</b></h4>
+          <p> “Never never never give up.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i65.tinypic.com/1f73us.jpg" alt="Unknown" style="width:100%">
+        <div class="container">
+          <h4><b>Unknown</b></h4>
+          <p> “If you want to show me that you really love me, don’t say that you would die for me, instead stay alive for me.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="row">
+    <div class="column1">
+      <div class="card">
+        <img src="http://i67.tinypic.com/ojpdsx.jpg" alt="Harriet Beecher Stowe" style="width:100%">
+        <h4><b>Harriet Beecher Stowe</b></h4>
+        <p> “When you get into a tight place and everything goes against you, till it seems as though you could not hang on a minute longer, never give up then, for that is just the place and time that the tide will turn.”</p>
+        </div>
+      </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i64.tinypic.com/5dngra.jpg" alt="Richard Bach" style="width:100%">
+        <div class="container">
+          <h4><b>Richard Bach</b></h4>
+          <p> “Anyone desperate enough for suicide should be desperate enough to go to creative extremes to solve problems: elope at midnight, stow away on the boat to New Zealand and start over, do what they always wanted to do but were afraid to try.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i67.tinypic.com/2i4yf6.jpg" alt="Unknown" style="width:100%">
+        <div class="container">
+          <h4><b>Unknown</b></h4>
+          <p> “If you are looking for a sign not to kill yourself, this is it.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i63.tinypic.com/2v7wb5l.jpg" alt="Unknown" style="width:100%">
+        <div class="container">
+          <h4><b>Unknown</b></h4>
+          <p> “Suicide doesn’t end the chances of life getting worse, it eliminates the possibility of it ever getting any better.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i63.tinypic.com/2cxcaiv.jpg" alt="Unknown" style="width:100%">
+        <div class="container">
+          <h4><b>Unknown</b></h4>
+          <p> “When you feel like giving up, just remember the reason why you held on for so long.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="row">
+    <div class="column1">
+      <div class="card">
+        <img src="http://i68.tinypic.com/2elxx8x.jpg" alt="Roy T. Bennett" style="width:100%">
+        <div class="container">
+          <h4><b>Roy T. Bennett</b></h4>
+          <p> “Acts of Kindness: A random act of kindness, no matter how small, can make a tremendous impact on someone else's life.”</p>
+          <p> “More smiling, less worrying. More compassion, less judgment. More blessed, less stressed. More love, less hate.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="card">
+        <img src="http://i68.tinypic.com/2rdu3id.jpg" alt="Alphonse Karr," style="width:100%">
+        <div class="container">
+          <h4><b>Alphonse Karr</b></h4>
+          <p> “We can complain because rose bushes have thorns, or rejoice because thorns have roses.”</p>
+        </div>
+      </div>
+    </div>
+      <div class="column1">
+        <div class="card">
+          <img src="http://i64.tinypic.com/9amu74.jpg" alt="Stephen King" style="width:100%">
+          <div class="container">
+            <h4><b>Stephen King</b></h4>
+            <p> “You can, you should, and if you’re brave enough to start, you will.”</p>
+          </div>
+        </div>
+      </div>
+       <div class="column1">
+        <div class="card">
+          <img src="http://i68.tinypic.com/2ez5yc8.jpg" alt="Kassie Walls" style="width:100%">
+          <div class="container">
+            <h4><b>Kassie Walls</b></h4>
+            <p> “You can't start the next chapter in your life if you keep rereading the last one.”</p>
+          </div>
+        </div>
+      </div>
+       <div class="column1">
+        <div class="card">
+          <img src="http://i63.tinypic.com/33ae59f.jpg" alt="Dr.Seuss" style="width:100%">
+          <div class="container">
+            <h4><b>Dr.Seuss</b></h4>
+            <p> “Don't cry because it's over, smile because it happened.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</div>
+
+
+<div id="Hotlines" class="tabcontent">
+  <br>
+  <font color="black">
+  <p ALIGN=center> <font size="+5">National Hotlines</font>
+      <br>
+      <p ALIGN=center> <font size="+3"> Below are hotlines for designated situations</font>
+<pre>
+    <font color="black">
+    <font style= "font-family:sans-serif;">
+<h2> Abuse </h2>
+          National Sexual Assault Hotline 1-800-656-HOPE (4673)
+
+          Child Abuse Hotline / Dept of Social Services 1-800-342-3720
+
+          Stop it Now! 1-888-PREVENT
+
+          United States Elder Abuse Hotline 1-866-363-4276
+
+          Child Abuse National Hotline 1-800-25-ABUSE
+
+          Children in immediate danger 1-800-THE-LOST
+
+          Exploitation of Children 1-800-843-5678
+
+          Missing Children Help Center 1-800-872-5437
+
+<h2> LGBTQ+ </h2>
+          Helpline 1-800-398-GAYS
+
+          Gay and Lesbian Hotlines 1-888-843-4564
+
+<h2> Runaways </h2>
+          Youth Crisis Hotline 1-800-448-4663
+
+          National Runaway Safeline 1-800-RUNAWAY (786-2929)
+
+<h2> Self-Injury </h2>
+          S.A.F.E. (Self Abuse Finally Ends) 1-800-DONT-CUT
+
+<h2> Family Violence </h2>
+
+          Family Violence Prevention Center 1-800-313-1310
+
+<h2> Addiction </h2>
+
+          Marijuana Anonymous 1-800-766-6779
+
+          Alcohol Treatment Referral Hotline (24 hours) 1-800-252-6465
+
+          Families Anonymous 1-800-736-9805
+
+          Cocaine Hotline (24 hours) 1-800-262-2463
+
+          Drug Abuse National Helpline 1-800-662-4357
+
+          National Association for Children of Alcoholics 1-888-554-2627
+
+          Ecstasy Addiction 1-800-468-6933
+
+          Alcoholics for Christ 1-800-441-7877
+
+<h2> Suicide </h2>
+
+          Suicide Hotline 1-800-SUICIDE (784-2433)
+
+          1-800-273-TALK (8255)
+
+          Suicide Prevention Hotline 1-800-827-7571
+
+          Deaf Hotline 1-800-799-4TTY
+
+<h2> Domestic Violence </h2>
+
+          National Domestic Violence Hotline 1-800-799-SAFE
+
+          National Domestic Violence Hotline Spanish 1-800-942-6908
+
+          Battered Women and their Children 1-800-603-HELP
+
+          Elder Abuse Hotline 1-800-252-8966
+
+          RAINN 1-800-656-HOPE (4673)
+</font>
+</font>
+        </pre>
+</div>
+
+<div id="About" class="tabcontent">
+  <p><font color="black">
+    <p/>
+  <p align=center><font size="+5">All About Us</font>
+  </p>
+  <h3><p align="center">
+    Here at HUGS we strive to help everyone we possibly can. We
+    have been doing this since we established our company in July
+    of 2018. Even though we have not been in this business for that
+    long we know a thing or two about the stress department. Working
+    in this group with extraordinary women has taught all of us to
+    be more compassionate and the importance to always do our best for our
+    consumers. We all live by our motto "be the bestest from the
+    restest" so our users can have the best possible experience
+    when getting the help they need.
+  </p>
+  <style>
+html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: #f2e6ff;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: #555;
+  }
+  </style>
+  </head>
+  <body>
+  <br>
+
+  <div class="row">
+    <div class="column">
+      <div class="card1">
+        <img src="http://i68.tinypic.com/2sakrut.jpg" height="300" width="200" align="left" hspace="20"/>
+        <div class="container">
+          <h2>Kassie Paredes</h2>
+          <p class="title">CEO &amp; Founder</p>
+          <p>Kassie, who is one of the best CEO's that the
+          company has ever worked with, dreams of being an engineer,
+          and with that burning passion she brings new and fresh ideas to
+          the table, and she's just trying to get through the day. As CEO
+          she is able to connect all of her executives to build an open
+          and safe environment for those who need it. Kassie also likes
+          to give her team the best possible work environment in order to
+          increase productivity and she loves giving out promotions to
+          all of her staff.</p>
+          <p>kassieparedes@gmail.com</p>
+        <form method="post" action="mailto:yourself@youremail.com" >
+      <input type="submit" value="Send Email" />
+    </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card1">
+        <img src="http://i63.tinypic.com/15wx750.jpg" alt="Ashli" height="300" width="200" align="left" hspace="40"/>
+        <div class="container">
+          <h2>Ashli Long</h2>
+          <p class="title">Art Director</p>
+          <p>Ashli has had a huge heart for helping people, she
+              even has an eye to see if certain colors compliment each
+              other or not since she could pick up a crayon. Right now she
+              wants to go into the FBI with her computer science skills.
+              While she has her heart set on that, she makes a huge impact on
+              the H.U.G.S. community and those around her. Ashli also loves
+              to use fidget spinners whenever she can.</p>
+          <p>ashlilong@gmail.com</p>
+          <form method="post" action="mailto:yourself@youremail.com" >
+        <input type="submit" value="Send Email" />
+      </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card1">
+        <img src="http://i67.tinypic.com/14sjm00.jpg" alt="Debra" height="300" width="200" align="left" hspace="20"/>
+        <div class="container">
+          <h2>Debra Rico</h2>
+          <p class="title">Researcher</p>
+          <p> Debra has always had a passion for researching
+          since she was three years old. She currently has a farm with
+          six goats, even though she is the G.O.A.T. Fun fact! she also has
+          seven dogs, and a pony named Benjamin. She wants to become
+          a neurosurgeon when she grows up, she brings that determination
+          into H.U.G.S. and everyone who meets her. You can tell she is
+          passionate about her work by looking at any of her projects.
+          With her big heart and the rest of the founders of H.U.G.S.,
+          she makes the world a better place. </p>
+          <p>debrarico@gmail.com</p>
+          <form method="post" action="mailto:yourself@youremail.com" >
+          <input type="submit" value="Send Email" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="column"><align=center/>
+      <div class="card1"><align=center/>
+        <img src="http://i64.tinypic.com/1z224d0.jpg" alt="Alia" height="300" width="200" align="left" hspace="40"/>
+        <div class="container">
+          <h2>Alia Hannon</h2>
+          <p class="title">Text Editor</p>
+          <p>Alia has a strong background in text editing,
+          aspires to go into the technology industry. She brings unique
+          ideas to H.U.G.S. in order to create the best possible experience
+          for our users. Alia also has mad typing skills because she is
+          always typing any text that goes onto the website.</p>
+          <p>aliahannon@gmail.com</p>
+          <form method="post" action="mailto:yourself@youremail.com" >
+        <input type="submit" value="Send Email" />
+      </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   <img src="http://i63.tinypic.com/vyxutf.jpg" height="300" width="700" alt="Girls Who Code" align="center" hspace="270"/>
+</p>
+</div>
+<body>
+<script type="text/javascript">
+//<![CDATA[
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+//]]>
+</script>
+  </body>
